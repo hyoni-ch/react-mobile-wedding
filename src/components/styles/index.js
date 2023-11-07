@@ -9,6 +9,10 @@ const MainBox = styled.div`
   justify-content: center;
   flex-direction: column;
 
+  & > div {
+    margin-bottom: 100px;
+  }
+
   .title {
     display: flex;
     flex-basis: 100%;
@@ -35,7 +39,6 @@ const MainBox = styled.div`
 
 const MentBox = styled.div`
   line-height: 1.5;
-  margin: 100px 0 100px;
 `;
 
 const GalleryBox = styled.div`
@@ -48,8 +51,15 @@ const VideoBox = styled.div`
   height: ${window.innerHeight}px;
 `;
 
-const LocationBox = styled.div``;
+const LocationBox = styled.div`
+  .map {
+    width: 420px;
+    height: 300px;
+  }
+`;
+
 const BankBox = styled.div``;
+
 const ShareBox = styled.div``;
 
 export {
