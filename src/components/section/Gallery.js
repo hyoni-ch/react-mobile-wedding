@@ -1,5 +1,4 @@
 import React from "react";
-import ImageGallery from "react-image-gallery";
 import {
   couple_image1,
   couple_image2,
@@ -10,28 +9,32 @@ import {
 } from "../../assets/images";
 import { GalleryBox } from "../styles";
 
-const images = [
+const photos = [
   {
-    original: couple_image1,
-    thumbnail: couple_image1_thumbnail,
+    src: couple_image1,
+    width: 4,
+    height: 3,
+    border: "5px",
   },
   {
-    original: couple_image2,
-    thumbnail: couple_image2_thumbnail,
+    src: couple_image1,
+    width: 4,
+    height: 3,
+    border: "5px",
   },
   {
-    original: couple_image3,
-    thumbnail: couple_image3_thumbnail,
+    src: couple_image1,
+    width: 4,
+    height: 3,
+    border: "5px",
   },
 ];
 
 export default function Gallery() {
   return (
     <GalleryBox>
-      <div className="title">우리의 아름다운 순간</div>
-      <div className="gallery">
-        <ImageGallery items={images} />
-      </div>
+      <h2 className="title pointColor">gallery</h2>
+      <div className="gallery" photos={photos}></div>
     </GalleryBox>
   );
 }

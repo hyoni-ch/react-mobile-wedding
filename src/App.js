@@ -1,12 +1,15 @@
 import "./App.css";
-import Main from "./components/Main";
+import Layout from "./components/Layout";
 import Footer from "./components/Footer";
+import { MainBox } from "./components/styles";
 
 function App() {
   return (
     <div className="App">
-      <Main />
-      <Footer />
+      <MainBox className="flex">
+        <Layout />
+        <Footer />
+      </MainBox>
     </div>
   );
 }

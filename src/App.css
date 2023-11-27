@@ -1,4 +1,5 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Nanum+Myeongjo&family=Noto+Serif+KR&display=swap');
 
 @font-face {
   font-family: 'GangwonEdu_OTFBoldA';
@@ -9,6 +10,7 @@
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 li {
@@ -18,11 +20,29 @@ li {
 a {
   display: block;
   text-decoration: none;
+  color: #222;
+}
+
+p {
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
 }
 
 
 .App {
-  font-family: 'GangwonEdu_OTFBoldA';
-  background-color: #fff1f0;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+
+  font-family: "Noto Serif KR",serif;
+  background-color: rgb(59, 59, 59);
+
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
