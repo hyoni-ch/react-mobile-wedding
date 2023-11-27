@@ -6,7 +6,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard/src";
 const { Kakao } = window;
 export default function Share() {
   // 배포한 자신의 사이트
-  const realUrl = "https://localhost:3000";
+  const realUrl = "https://mobile-wedding-chh.netlify.app";
   // 로컬 주소 (localhost 3000 같은거)
   const resultUrl = window.location.href;
 
