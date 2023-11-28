@@ -65,9 +65,9 @@ export default function Location() {
   };
 
   return (
-    <LocationBox className="flex flex-col bg-gray relative">
+    <LocationBox className="flex flex-col bg-gray relative ">
       <Fade bottom cascade delay={500}>
-        <div className="bg-img-top">
+        <div className="bg-img-top ">
           <img
             src="https://cdn2.makedear.com/homepage/img/bg3/gray-top.png"
             alt=""

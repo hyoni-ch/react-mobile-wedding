@@ -100,6 +100,10 @@ const MainBox = styled.div`
     background-color: rgba(249, 249, 249, var(--tw-bg-opacity));
   }
 
+  .bg-pink {
+    background-color: #f8f5f3;
+  }
+
   .relative {
     position: relative;
   }

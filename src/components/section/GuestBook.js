@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 
 export default function GuestBook() {
   return (
-    <GuestBookBox className="relative spacerB">
+    <GuestBookBox className="relative spacerB bg-pink">
       <Fade bottom cascade delay={500}>
         <div className="bg-img-top">
           <img

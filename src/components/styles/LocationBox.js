@@ -86,6 +86,7 @@ const LocationBox = styled.div`
     border: 1px solid #eee;
     border-radius: 7px;
     gap: 0.5rem;
+    background-color: #fff;
 
     .navi-bar-box {
       width: 33.3333333%;
