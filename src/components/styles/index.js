@@ -35,6 +35,10 @@ const MainBox = styled.div`
     width: 100%;
   }
 
+  .w-full {
+    width: 100%;
+  }
+
   .flex {
     display: flex;
     align-items: center;

@@ -114,11 +114,8 @@ export default function Bank() {
           ></div>
 
           <div className="margin10 ">
-            <div
-              className="flex account-box-about text-left"
-              style={{ marginBottom: "5px" }}
-            >
-              <div className="account-box-about text-left">
+            <div className="flex" style={{ marginBottom: "5px" }}>
+              <div className="w-full text-left">
                 아버지 <strong>손용래</strong>
               </div>
             </div>
@@ -199,7 +196,7 @@ export default function Bank() {
 
           <div className="margin10 ">
             <div className="flex" style={{ marginBottom: "5px" }}>
-              <div className="account-box-about text-left">
+              <div className="w-full text-left">
                 아버지 <strong>조규정</strong>
               </div>
             </div>

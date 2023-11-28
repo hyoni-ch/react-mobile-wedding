@@ -58,10 +58,6 @@ const BankBox = styled.div`
     height: 180px;
     border: 1px solid #eee;
   }
-
-  .account-box-about {
-    width: 100%;
-  }
 `;
 
 export { BankBox };
