@@ -8,4 +8,4 @@ const ShareBox = styled.div`
   }
 `;
 
-export default ShareBox;
+export { ShareBox };

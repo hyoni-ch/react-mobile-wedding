@@ -55,14 +55,8 @@ const CalendarBox = styled.div`
   }
 `;
 
-const GalleryBox = styled.div`
-  .gallery {
-    margin: 20px 30px 10px 30px;
-  }
-`;
 
-const VideoBox = styled.div`
-  height: calc(${window.innerHeight}-84) px;
-`;
 
-export default CalendarBox;
+
+
+export { CalendarBox} ;

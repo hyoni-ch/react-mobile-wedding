@@ -64,4 +64,4 @@ const BankBox = styled.div`
   }
 `;
 
-export default BankBox;
+export { BankBox };

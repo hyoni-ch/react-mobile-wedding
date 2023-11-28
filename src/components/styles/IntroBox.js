@@ -54,4 +54,4 @@ const IntroBox = styled.div`
   }
 `;
 
-export default IntroBox;
+export { IntroBox };

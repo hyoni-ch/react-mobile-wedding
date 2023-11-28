@@ -30,4 +30,4 @@ const MentBox = styled.div`
   }
 `;
 
-export default MentBox;
+export { MentBox };

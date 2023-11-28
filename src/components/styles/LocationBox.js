@@ -119,4 +119,4 @@ const LocationBox = styled.div`
   }
 `;
 
-export default LocationBox;
+export { LocationBox };

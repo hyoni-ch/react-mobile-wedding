@@ -6,4 +6,4 @@ const GalleryBox = styled.div`
   }
 `;
 
-export default GalleryBox;
+export { GalleryBox };
