@@ -286,7 +286,7 @@ const CalendarBox = styled.div`
 
         .td-div {
           max-height: 2rem;
-          width: 100%;
+          width: 2.2rem;
         }
       }
     }
@@ -413,6 +413,12 @@ const LocationBox = styled.div`
   .bus-point {
     font-size: 0.8rem;
     padding-left: 1rem;
+  }
+
+  @media screen and (max-width: 367px) {
+    .navi-bar {
+      font-size: 0.8rem;
+    }
   }
 `;
 
