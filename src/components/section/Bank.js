@@ -114,7 +114,10 @@ export default function Bank() {
           ></div>
 
           <div className="margin10 ">
-            <div className="flex" style={{ marginBottom: "5px" }}>
+            <div
+              className="flex account-box-about text-left"
+              style={{ marginBottom: "5px" }}
+            >
               <div className="account-box-about text-left">
                 아버지 <strong>손용래</strong>
               </div>

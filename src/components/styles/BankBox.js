@@ -3,6 +3,7 @@ import styled from "styled-components";
 const BankBox = styled.div`
   .account-container {
     overflow: hidden;
+    cursor: pointer;
     transition: height 0.3s ease-in-out;
     height: 40px; /* 토글되지 않았을 때의 높이 */
   }
@@ -17,7 +18,6 @@ const BankBox = styled.div`
     border-radius: 0.3rem;
     width: 85%;
     height: 3rem;
-    cursor: pointer;
 
     .arrow {
       position: absolute;
