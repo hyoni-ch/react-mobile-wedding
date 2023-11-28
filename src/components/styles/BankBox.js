@@ -54,9 +54,80 @@ const BankBox = styled.div`
     transition: height 0.6s ease-in-out;
   }
 
-  .account-box-sub.open {
+  .account-box-sub.open-g {
+    height: 90px;
+    border: 1px solid #eee;
+  }
+
+  .account-box-sub.open-b {
     height: 180px;
     border: 1px solid #eee;
+  }
+
+  .btn-call {
+    margin: 1rem;
+    width: 10rem;
+    border-radius: 2rem;
+    border: 1px solid #ddd;
+  }
+
+  .modal {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+
+    .modal-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 0.3rem;
+      background-color: #fff;
+      width: 22rem;
+
+      .modal-box-title {
+        height: 3rem;
+        width: 100%;
+        background-color: #f7f7f7;
+        border-radius: 0.3rem 0.3rem 0 0;
+        margin-bottom: 0.4rem;
+      }
+
+      .modal-container {
+        font-family: "SUIT-Regular";
+        padding: 0.5rem;
+
+        .modal-box-about {
+          padding-bottom: 0.5rem;
+
+          .about-g {
+            color: #668eaa;
+          }
+
+          .about-b {
+            color: #ce8383;
+          }
+        }
+      }
+    }
+
+    .btn-close {
+      border: none;
+    }
+  }
+
+  .modal-open {
+    opacity: 1;
+    visibility: visible;
+    display: block;
   }
 `;
 

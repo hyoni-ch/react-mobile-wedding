@@ -43,6 +43,10 @@ const MainBox = styled.div`
     width: 90%;
   }
 
+  .w-33 {
+    width: 33.3333%;
+  }
+
   .flex {
     display: flex;
     align-items: center;
@@ -57,6 +61,12 @@ const MainBox = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
+  }
+
+  .flex-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
   }
 
   .spacerB {
@@ -85,6 +95,10 @@ const MainBox = styled.div`
 
   .text-left {
     text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
   }
 
   .font-size-095 {
@@ -151,6 +165,12 @@ const MainBox = styled.div`
     height: 1rem;
     margin-left: 0.2rem;
     margin-right: 0.2rem;
+  }
+
+  .line3 {
+    border: 1px solid #f8f8f8;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
   }
 
   .btn {

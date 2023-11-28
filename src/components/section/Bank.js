@@ -3,12 +3,25 @@ import { BankBox } from "../styles/BankBox";
 import Fade from "react-reveal/Fade";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { RiKakaoTalkFill } from "react-icons/ri";
+import { IoCall, IoCloseSharp } from "react-icons/io5";
+import { IoIosMail } from "react-icons/io";
+
 import { CopyToClipboard } from "react-copy-to-clipboard/src";
 import { LuCopy } from "react-icons/lu";
 
 export default function Bank() {
   const [isGroomAccountsVisible, setIsGroomAccountsVisible] = useState(false);
   const [isBrideAccountsVisible, setIsBrideAccountsVisible] = useState(false);
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const showModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
 
   const handleGroomContainerClick = () => {
     setIsGroomAccountsVisible(!isGroomAccountsVisible);
@@ -74,7 +87,7 @@ export default function Bank() {
         <div
           id="groom-container"
           className={`account-box account-box-sub font-size-095 relative ${
-            isGroomAccountsVisible ? "open" : ""
+            isGroomAccountsVisible ? "open-g" : ""
           }`}
         >
           <div className="margin10">
@@ -83,7 +96,7 @@ export default function Bank() {
                 신랑 <strong>손창경</strong>
               </div>
               <a
-                href="https://qr.kakaopay.com/Ej8IsTVu6"
+                href="https://qr.kakaopay.com/Ej8YEOJNL"
                 draggable="flase"
                 target="_blank"
                 rel="noopener"
@@ -95,35 +108,9 @@ export default function Bank() {
               </a>
             </div>
             <div className="flex">
-              <div className="text-left w-90">신한 110-480-022632</div>
+              <div className="text-left w-90">국민 657802-01-301076</div>
               <CopyToClipboard
-                text="신한 110-480-022632"
-                onCopy={() => alert("클립보드에 복사되었습니다.")}
-              >
-                <div className="btn-account flex">
-                  <LuCopy style={{ marginRight: "5px" }} />
-                  복사
-                </div>
-              </CopyToClipboard>
-            </div>
-          </div>
-
-          <div
-            className="line"
-            style={{ width: "100%", marginBottom: "1rem" }}
-          ></div>
-
-          <div className="margin10 ">
-            <div className="flex" style={{ marginBottom: "5px" }}>
-              <div className="w-full text-left">
-                아버지 <strong>손용래</strong>
-              </div>
-            </div>
-
-            <div className="flex">
-              <div className="text-left w-90">신한 110-480-022632</div>
-              <CopyToClipboard
-                text="신한 110-480-022632"
+                text="국민 657802-01-301076"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
               >
                 <div className="btn-account flex">
@@ -155,7 +142,7 @@ export default function Bank() {
 
         <div
           className={`account-box account-box-sub font-size-095 relative ${
-            isBrideAccountsVisible ? "open" : ""
+            isBrideAccountsVisible ? "open-b" : ""
           }`}
         >
           <div className="margin10">
@@ -164,7 +151,7 @@ export default function Bank() {
                 신부 <strong>조하나</strong>
               </div>
               <a
-                href="https://qr.kakaopay.com/Ej8IsTVu6"
+                href="https://qr.kakaopay.com/FdigSBGyb"
                 draggable="flase"
                 target="_blank"
                 rel="noopener"
@@ -176,9 +163,9 @@ export default function Bank() {
               </a>
             </div>
             <div className="flex">
-              <div className="w-90 text-left">신한 110-480-022632</div>
+              <div className="w-90 text-left">카카오뱅크 3333-19-4893081</div>
               <CopyToClipboard
-                text="신한 110-480-022632"
+                text="카카오뱅크 3333-19-4893081"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
               >
                 <div className="btn-account flex">
@@ -197,14 +184,14 @@ export default function Bank() {
           <div className="margin10 ">
             <div className="flex" style={{ marginBottom: "5px" }}>
               <div className="w-full text-left">
-                아버지 <strong>조규정</strong>
+                아버지 <strong>조규정</strong> · 어머니 <strong>조수정</strong>
               </div>
             </div>
 
             <div className="flex">
-              <div className="w-90 text-left">신한 110-480-022632</div>
+              <div className="w-90 text-left">신한 110-541-508666</div>
               <CopyToClipboard
-                text="신한 110-480-022632"
+                text="신한 110-541-508666"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
               >
                 <div className="btn-account flex">
@@ -213,6 +200,101 @@ export default function Bank() {
                 </div>
               </CopyToClipboard>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <button className="btn btn-call" onClick={showModal}>
+          연락하기
+        </button>
+      </section>
+
+      <section className={`modal ${modalIsOpen ? "modal-open" : ""}`}>
+        <div className="modal-box flex flex-col">
+          <div className="modal-box-title flex">연 락 하 기</div>
+
+          <div className="modal-container flex flex-col w-full">
+            <div className="modal-box-about flex w-full">
+              <div className="w-33 about-g">신랑</div>
+              <div className="w-33">손창경</div>
+              <div className="flex-evenly w-33 ">
+                <a href="tel:01057689284">
+                  <IoCall size="20" color="#668eaa" />
+                </a>
+                <a href="sms:01057689284">
+                  <IoIosMail size="22" color="#668eaa" />
+                </a>
+              </div>
+            </div>
+            <div className="modal-box-about flex w-full">
+              <div className="w-33 about-g">신랑 아버지</div>
+              <div className="w-33">손용래</div>
+              <div className="flex-evenly w-33 ">
+                <a href="tel:01057689284">
+                  <IoCall size="20" color="#668eaa" />
+                </a>
+                <a href="sms:01057689284">
+                  <IoIosMail size="22" color="#668eaa" />
+                </a>
+              </div>
+            </div>
+            <div className="modal-box-about flex w-full">
+              <div className="w-33 about-g">신랑 어머니</div>
+              <div className="w-33">김은희</div>
+              <div className="flex-evenly w-33 ">
+                <a href="tel:01057689284">
+                  <IoCall size="20" color="#668eaa" />
+                </a>
+                <a href="sms:01057689284">
+                  <IoIosMail size="22" color="#668eaa" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="line3 w-90"></div>
+
+          <div className="modal-container flex flex-col w-full">
+            <div className="modal-box-about flex w-full">
+              <div className="w-33 about-b">신부</div>
+              <div className="w-33">조하나</div>
+              <div className="flex-evenly w-33 ">
+                <a href="tel:01058507465">
+                  <IoCall size="20" color="#ce8383" />
+                </a>
+                <a href="sms:01058507465">
+                  <IoIosMail size="22" color="#ce8383" />
+                </a>
+              </div>
+            </div>
+            <div className="modal-box-about flex w-full">
+              <div className="w-33 about-b">신부 아버지</div>
+              <div className="w-33">조규정</div>
+              <div className="flex-evenly w-33 ">
+                <a href="tel:01040179933">
+                  <IoCall size="20" color="#ce8383" />
+                </a>
+                <a href="sms:01040179933">
+                  <IoIosMail size="22" color="#ce8383" />
+                </a>
+              </div>
+            </div>
+            <div className="modal-box-about flex w-full">
+              <div className="w-33 about-b">신부 어머니</div>
+              <div className="w-33">조수정</div>
+              <div className="flex-evenly w-33 ">
+                <a href="tel:01041399933">
+                  <IoCall size="20" color="#ce8383" />
+                </a>
+                <a href="sms:01041399933">
+                  <IoIosMail size="22" color="#ce8383" />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="btn btn-close" onClick={closeModal}>
+            <IoCloseSharp />
           </div>
         </div>
       </section>

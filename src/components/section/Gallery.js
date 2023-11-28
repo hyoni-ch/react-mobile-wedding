@@ -34,7 +34,7 @@ export default function Gallery() {
   ];
 
   return (
-    <GalleryBox className="spacerB">
+    <GalleryBox>
       <h2 className="title pointColor">gallery</h2>
       <ScrollContainer className="scroll-container">
         <section className="flex flex-col relative gallery-container">
