@@ -90,10 +90,11 @@ export default function Location() {
       <Fade bottom cascade delay={500}>
         <div>
           <p>인천 서구 염곡로 725</p>
+          <p>인천아시아드주경기장 3번 게이트</p>
           <p>인천아시아드웨딩컨벤션 브릴리에홀</p>
         </div>
 
-        <div className="spacerB">
+        <div className="spacerB50">
           <CopyToClipboard
             text="인천 서구 염곡로 725"
             onCopy={() => alert("클립보드에 복사되었습니다.")}
