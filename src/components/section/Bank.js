@@ -34,7 +34,7 @@ export default function Bank() {
         <h2 className="title pointColor">Account</h2>
       </Fade>
 
-      <section className="spacerB50">
+      <section className="spacerB50 flex">
         <Fade bottom delay={500}>
           <h3 className="padding-3">마음 전하실 곳</h3>
 
