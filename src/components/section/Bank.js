@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BankBox } from "../styles";
+import { BankBox } from "../styles/BankBox";
 import Fade from "react-reveal/Fade";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { RiKakaoTalkFill } from "react-icons/ri";

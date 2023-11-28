@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { ShareBox } from "../styles";
+import { ShareBox } from "../styles/ShareBox";
 import Fade from "react-reveal/Fade";
 import { CopyToClipboard } from "react-copy-to-clipboard/src";
 
@@ -58,7 +58,7 @@ export default function Share() {
       <section className="flex">
         <div>
           <CopyToClipboard
-            text="인천 서구 염곡로 725"
+            text="https://mobile-wedidng-chh.netlify.app"
             onCopy={() => alert("클립보드에 복사되었습니다.")}
           >
             <button className="btn btn-share" style={{ marginRight: "0.5rem" }}>

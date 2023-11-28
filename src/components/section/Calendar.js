@@ -1,5 +1,5 @@
 import React from "react";
-import { CalendarBox } from "../styles";
+import { CalendarBox } from "../styles/CalendarBox";
 import Fade from "react-reveal/Fade";
 
 class Calendar extends React.Component {

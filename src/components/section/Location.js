@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { LocationBox } from "../styles";
+import { LocationBox } from "../styles/LocationBox";
 import { CopyToClipboard } from "react-copy-to-clipboard/src";
 import Fade from "react-reveal/Fade";
 import { PiLockSimpleFill, PiLockSimpleOpenFill } from "react-icons/pi";

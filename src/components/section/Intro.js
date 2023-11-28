@@ -1,5 +1,5 @@
 import React from "react";
-import { IntroBox } from "../styles";
+import { IntroBox } from "../styles/IntroBox";
 import { intro_image } from "../../assets/images";
 
 export default function Intro() {

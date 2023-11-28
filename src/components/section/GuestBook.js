@@ -1,5 +1,5 @@
 import React from "react";
-import { GuestBookBox } from "../styles";
+import { GuestBookBox } from "../styles/GuestBookBox";
 import Fade from "react-reveal/Fade";
 
 export default function GuestBook() {

@@ -7,7 +7,7 @@ import {
   couple_image2_thumbnail,
   couple_image3_thumbnail,
 } from "../../assets/images";
-import { GalleryBox } from "../styles";
+import { GalleryBox } from "../styles/GalleryBox";
 
 const photos = [
   {

@@ -1,5 +1,5 @@
 import React from "react";
-import { MentBox } from "../styles";
+import { MentBox } from "../styles/MentBox";
 import Fade from "react-reveal/Fade";
 import { intro_image } from "../../assets/images";
 
@@ -51,7 +51,7 @@ export default function Ment() {
       </section>
 
       <section>
-        <Fade bottom delay={500}>
+        <Fade bottom cascade delay={500}>
           <ul className="myName">
             <li>
               <strong>손용래</strong> · <strong>김은희</strong>의 장남{" "}
