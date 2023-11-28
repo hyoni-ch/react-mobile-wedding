@@ -175,7 +175,7 @@ export default function Location() {
           <div className="line"></div>
         </Fade>
         <Fade bottom cascade delay={500}>
-          <div className="text-left font-size-095">
+          <div className="text-left font-size-095 w-90">
             <p>우성아파트[42717] : 24-1, 70, 인천e음86, 111, 111B, 302,310</p>
             <p>
               우성아파트[42718] : 24-1, 70, 595, 인천e음86, 111, 111B, 302,
@@ -187,7 +187,7 @@ export default function Location() {
         </Fade>
       </section>
 
-      <section className="flex flex-col spacerB50 ">
+      <section className="flex flex-col spacerB50 w-90">
         <Fade bottom delay={500}>
           <h3 className="text-left">지하철</h3>
           <div className="line"></div>
@@ -204,7 +204,7 @@ export default function Location() {
         </Fade>
       </section>
 
-      <section className="flex flex-col spacerB">
+      <section className="flex flex-col spacerB w-90">
         <Fade bottom delay={500}>
           <h3 className="text-left">주차</h3>
           <div className="line"></div>

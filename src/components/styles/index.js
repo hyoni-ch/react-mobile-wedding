@@ -39,6 +39,10 @@ const MainBox = styled.div`
     width: 100%;
   }
 
+  .w-90 {
+    width: 90%;
+  }
+
   .flex {
     display: flex;
     align-items: center;
@@ -80,7 +84,6 @@ const MainBox = styled.div`
   }
 
   .text-left {
-    width: 90%;
     text-align: left;
   }
 
