@@ -106,7 +106,7 @@ const MainBox = styled.div`
 
   .bg-img-top {
     position: absolute;
-    top: -20px;
+    top: -18px;
     left: 0;
     z-index: 1;
   }
@@ -150,6 +150,7 @@ const MainBox = styled.div`
     border: 1px solid #eee;
     border-radius: 5px;
     cursor: pointer;
+    color: #222;
   }
 `;
 
@@ -285,6 +286,7 @@ const CalendarBox = styled.div`
 
         .td-div {
           max-height: 2rem;
+          width: 100%;
         }
       }
     }
@@ -487,6 +489,10 @@ const ShareBox = styled.div`
     padding: 0.8rem 1rem 0.8rem 1rem;
     width: 12rem;
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: 367px) {
+    flex-direction: column;
   }
 `;
 

@@ -55,19 +55,24 @@ export default function Share() {
           />
         </div>
       </Fade>
+      <section className="flex">
+        <div>
+          <CopyToClipboard
+            text="인천 서구 염곡로 725"
+            onCopy={() => alert("클립보드에 복사되었습니다.")}
+          >
+            <button className="btn btn-share" style={{ marginRight: "0.5rem" }}>
+              URL 복사하기
+            </button>
+          </CopyToClipboard>
+        </div>
 
-      <CopyToClipboard
-        text="인천 서구 염곡로 725"
-        onCopy={() => alert("클립보드에 복사되었습니다.")}
-      >
-        <button className="btn btn-share" style={{ marginRight: "0.5rem" }}>
-          URL 복사하기
-        </button>
-      </CopyToClipboard>
-
-      <button className="btn btn-share" onClick={shareKakao}>
-        카카오톡 공유하기
-      </button>
+        <div>
+          <button className="btn btn-share" onClick={shareKakao}>
+            카카오톡 공유하기
+          </button>
+        </div>
+      </section>
     </ShareBox>
   );
 }
