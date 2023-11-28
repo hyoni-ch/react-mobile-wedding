@@ -263,6 +263,7 @@ const CalendarBox = styled.div`
 
         .special-day {
           position: relative;
+          width: 100%;
           background-color: rgba(208, 140, 149, 0.7);
           color: #fff;
           border-radius: 50%;
@@ -280,13 +281,12 @@ const CalendarBox = styled.div`
       }
     }
 
-    @media screen and (max-width: 367px) {
+    @media screen and (max-width: 400px) {
       table {
         width: 90%;
 
         .td-div {
           max-height: 2rem;
-          width: 2.2rem;
         }
       }
     }
@@ -415,7 +415,7 @@ const LocationBox = styled.div`
     padding-left: 1rem;
   }
 
-  @media screen and (max-width: 367px) {
+  @media screen and (max-width: 400px) {
     .navi-bar {
       font-size: 0.8rem;
     }
@@ -493,12 +493,8 @@ const GuestBookBox = styled.div`
 const ShareBox = styled.div`
   .btn-share {
     padding: 0.8rem 1rem 0.8rem 1rem;
-    width: 12rem;
+    width: 10rem;
     font-size: 1rem;
-  }
-
-  @media screen and (max-width: 367px) {
-    flex-direction: column;
   }
 `;
 
