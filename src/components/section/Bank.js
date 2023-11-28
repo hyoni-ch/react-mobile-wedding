@@ -79,7 +79,7 @@ export default function Bank() {
         >
           <div className="margin10">
             <div className="flex" style={{ marginBottom: "5px" }}>
-              <div className="account-box-about text-left">
+              <div className="text-left w-90">
                 신랑 <strong>손창경</strong>
               </div>
               <a
@@ -95,7 +95,7 @@ export default function Bank() {
               </a>
             </div>
             <div className="flex">
-              <div className="text-left">신한 110-480-022632</div>
+              <div className="text-left w-90">신한 110-480-022632</div>
               <CopyToClipboard
                 text="신한 110-480-022632"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
@@ -121,7 +121,7 @@ export default function Bank() {
             </div>
 
             <div className="flex">
-              <div className="text-left">신한 110-480-022632</div>
+              <div className="text-left w-90">신한 110-480-022632</div>
               <CopyToClipboard
                 text="신한 110-480-022632"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
@@ -160,7 +160,7 @@ export default function Bank() {
         >
           <div className="margin10">
             <div className="flex" style={{ marginBottom: "5px" }}>
-              <div className="account-box-about text-left">
+              <div className="w-90 text-left">
                 신부 <strong>조하나</strong>
               </div>
               <a
@@ -176,7 +176,7 @@ export default function Bank() {
               </a>
             </div>
             <div className="flex">
-              <div className="text-left">신한 110-480-022632</div>
+              <div className="w-90 text-left">신한 110-480-022632</div>
               <CopyToClipboard
                 text="신한 110-480-022632"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
@@ -202,7 +202,7 @@ export default function Bank() {
             </div>
 
             <div className="flex">
-              <div className="text-left">신한 110-480-022632</div>
+              <div className="w-90 text-left">신한 110-480-022632</div>
               <CopyToClipboard
                 text="신한 110-480-022632"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
