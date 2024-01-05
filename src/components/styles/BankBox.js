@@ -67,8 +67,8 @@ const BankBox = styled.div`
   .btn-call {
     margin: 1rem;
     width: 10rem;
-    border-radius: 2rem;
-    border: 1px solid #ddd;
+    border-radius: 2rem; !important;
+    border: 1px solid #ddd; !important;
   }
 
   .modal {

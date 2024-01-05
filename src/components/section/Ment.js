@@ -16,7 +16,7 @@ export default function Ment() {
           />
         </Fade>
         <Fade bottom cascade delay={500}>
-          <div className="poetry nanumFont lineHeight flex flex-col">
+          <div className="poetry nanumFont lineHeight flex flex-col ">
             <p>저절로 웃음이 났다.</p>
             <p>웃는 남자를 보고 여자도 웃었다.</p>
             <p>마음에 꽃이 피는 것 같았다.</p>

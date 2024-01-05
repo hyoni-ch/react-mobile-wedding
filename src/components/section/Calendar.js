@@ -31,7 +31,7 @@ class Calendar extends React.Component {
 
         <h2 className="title pointColor">Calendar</h2>
 
-        <section className="calendar flex flex-col">
+        <section className="calendar flex flex-col fade">
           <div style={{ marginBottom: "20px" }}>
             <strong>{month + 1}월</strong>
           </div>
@@ -41,7 +41,10 @@ class Calendar extends React.Component {
               <tr>
                 {weeks.map((week, idx) => {
                   return (
-                    <th className={`table-th ${idx === 0 ? "pointColor" : ""}`}>
+                    <th
+                      key={idx}
+                      className={`table-th ${idx === 0 ? "pointColor" : ""}`}
+                    >
                       <div>{weeks[idx]}</div>
                     </th>
                   );
@@ -88,9 +91,10 @@ class Calendar extends React.Component {
               <p>
                 {" "}
                 창경 <span className="pointColor">♥</span> 하나의 결혼식이{" "}
-                <string>
-                  <span className="pointColor">{dDay}</span>일 남았습니다.
-                </string>
+                <strong>
+                  <span className="pointColor">{dDay}</span>
+                </strong>
+                일 남았습니다.
               </p>
             </div>
           </Fade>

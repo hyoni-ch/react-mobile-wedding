@@ -1,41 +1,113 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   couple_image1,
   couple_image2,
   couple_image3,
   couple_image4,
+  couple_image5,
+  couple_image6,
+  couple_image7,
+  couple_image8,
+  couple_image9,
+  couple_image10,
+  couple_image11,
 } from "../../assets/images";
-import { GalleryBox } from "../styles/GalleryBox";
+import { GalleryBox, ButtonIcon } from "../styles/GalleryBox";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Gallery() {
   const images = [
-    { path: couple_image4, top: 0, left: 0 },
-
-    { path: couple_image2, top: 0, left: 200, height: 286 },
-    { path: couple_image2, top: 0, left: 400, height: 286 },
-    { path: couple_image4, top: 0, left: 600, height: 137 },
-    { path: couple_image4, top: 0, left: 800, height: 137 },
-    { path: couple_image1, top: 0, left: 1000, height: 286 },
-    { path: couple_image2, top: 0, left: 1200, height: 286 },
-    { path: couple_image4, top: 0, left: 1400, height: 137 },
-    { path: couple_image1, top: 150, left: 0, height: 286 },
-    { path: couple_image1, top: 150, left: 1400, height: 286 },
-    { path: couple_image4, top: 147.5, left: 600, height: 137 },
-    { path: couple_image3, top: 147.5, left: 800, height: 286 },
-    { path: couple_image4, top: 442.5, left: 0, height: 137 },
-    { path: couple_image4, top: 442.5, left: 800, height: 137 },
-    { path: couple_image4, top: 442.5, left: 1400, height: 137 },
-    { path: couple_image3, top: 295, left: 200, height: 286 },
-    { path: couple_image3, top: 295, left: 600, height: 286 },
-    { path: couple_image1, top: 295, left: 400, height: 286 },
-    { path: couple_image2, top: 295, left: 1000, height: 286 },
-    { path: couple_image3, top: 295, left: 1200, height: 286 },
+    { path: couple_image1, top: 0, left: 0 },
+    { path: couple_image5, top: 145, left: 600, height: 286 },
+    { path: couple_image4, top: 0, left: 400, height: 286 },
+    { path: couple_image6, top: 0, left: 600, height: 137 },
+    { path: couple_image9, top: 145, left: 0, height: 286 },
+    { path: couple_image7, top: 442.5, left: 600, height: 137 },
+    { path: couple_image2, top: 442.5, left: 0, height: 137 },
+    { path: couple_image8, top: 295, left: 200, height: 286 },
+    { path: couple_image10, top: 442.5, left: 400, height: 137 },
+    { path: couple_image3, top: 295, left: 400, height: 137 },
+    { path: couple_image11, top: 0, left: 200, height: 137 },
   ];
+
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const showModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const onClickImage = index => {
+    setSelectedImageIndex(index);
+    showModal(); // 이미지 클릭 시 모달을 열도록 추가
+  };
+
+  const onNextImage = () => {
+    /* next버튼을 눌렀을 때 실행되는 함수 */
+    setSelectedImageIndex(prevIndex => (prevIndex + 1) % images.length);
+  }; /* 이미지 Index가 하나 늘어나도록 구현 */
+
+  const onPrevImage = () => {
+    /* prev버튼을 눌렀을 때 실행되는 함수 */
+    setSelectedImageIndex(prevIndex =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    ); /* 이미지 Index가 하나 줄어들도록 구현 */
+  };
 
   return (
     <GalleryBox>
       <h2 className="title pointColor">gallery</h2>
+
+      <section className={`modal ${modalIsOpen ? "modal-open" : ""}`}>
+        <div className="modal-box">
+          <ButtonIcon
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            onClick={onPrevImage}
+          >
+            <path
+              d="M25 30L15 20L25 10"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </ButtonIcon>
+
+          <img
+            src={images[selectedImageIndex].path}
+            alt="img"
+            className="relative"
+          />
+          <ButtonIcon
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            viewBox="0 0 40 40"
+            fill="none"
+            onClick={onNextImage}
+          >
+            <path
+              d="M15 30L25 20L15 10"
+              stroke="#ffffff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </ButtonIcon>
+          <button className="btn-close" onClick={closeModal}>
+            X
+          </button>
+        </div>
+      </section>
+
       <ScrollContainer className="scroll-container">
         <section className="flex flex-col relative gallery-container">
           <div style={{ paddingRight: "1rem" }}>
@@ -50,6 +122,7 @@ export default function Gallery() {
                   height: `${image.height}px`,
                 }}
                 className="w-full"
+                onClick={() => onClickImage(index)}
               />
             ))}
           </div>

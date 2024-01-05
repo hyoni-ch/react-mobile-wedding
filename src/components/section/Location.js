@@ -104,7 +104,7 @@ export default function Location() {
         </div>
       </Fade>
 
-      <div className="lock relative">
+      <div className="lock relative fade">
         <button onClick={handleToggleDraggable} className="btn btn-lock ">
           {draggable ? (
             <PiLockSimpleOpenFill size="16" />
@@ -114,9 +114,9 @@ export default function Location() {
         </button>
       </div>
 
-      <div id="map" className="map"></div>
+      <div id="map" className="map fade"></div>
 
-      <div className="navi-bar">
+      <div className="navi-bar fade">
         <div className="navi-bar-box">
           <a
             href="https://naver.me/GqNbNfGk"
