@@ -137,20 +137,20 @@ const GalleryBox = styled.div`
 
   @keyframes ani1-2 {
     0% {
-      stroke-dashoffset: 0;
+      stroke-dashoffset: none;
     }
 
     40% {
-      stroke-dashoffset: 100;
+      stroke-dashoffset: 0;
     }
 
     85% {
-      stroke-dashoffset: 0;
+      stroke-dashoffset: 100;
       stroke: #f6f6f6;
     }
 
     100% {
-      stroke-dashoffset: 0;
+      stroke-dashoffset: 100;
       stroke: #999999;
     }
   }
