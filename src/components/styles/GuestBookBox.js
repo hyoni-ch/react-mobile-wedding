@@ -76,7 +76,8 @@ const GuestBookBox = styled.div`
         background-size: 100% 2rem;
 
         .title-upload {
-          margin-right: 0.5rem;
+          padding-right: 0.5rem;
+          min-width: 30px;
         }
 
         .upload-content {
