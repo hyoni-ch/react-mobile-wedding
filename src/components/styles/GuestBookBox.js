@@ -19,13 +19,14 @@ const GuestBookBox = styled.div`
       padding: 1.5rem;
 
       hr {
+        margin-top: 0.1rem;
         border-right-width: 1px;
         height: 0.7rem;
         border-top-width: 0;
         border-color: #f9f9f9;
         background: #f9f9f9;
         color: #f9f9f9;
-        margin-left: 0.5rem;
+        margin-left: 0.2rem;
       }
 
       input {
@@ -43,11 +44,12 @@ const GuestBookBox = styled.div`
 
       textarea {
         position: absolute;
-        top: -0.5rem;
+        top: -0.4rem;
         left: 0;
         resize: none;
         line-height: 2rem;
-        text-indent: 3.2rem;
+        width: 100%;
+        text-indent: 2.9rem;
         overflow: hidden;
         background: inherit;
         border: none;
@@ -61,7 +63,7 @@ const GuestBookBox = styled.div`
       }
 
       .margin-b03 {
-        margin-bottom: 0.3rem;
+        margin-bottom: 0.6rem;
       }
 
       .btn-upload-submit {
@@ -79,7 +81,7 @@ const GuestBookBox = styled.div`
 
         .title-upload {
           padding-right: 0.5rem;
-          min-width: 40px;
+          min-width: 36px;
         }
 
         .upload-content {
