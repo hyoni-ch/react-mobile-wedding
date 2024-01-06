@@ -55,7 +55,7 @@ const GalleryBox = styled.div`
     font-size: 1.3rem;
     position: absolute;
     right: 2rem;
-    top: -10rem;
+    top: -5rem;
     cursor: pointer;
   }
 
