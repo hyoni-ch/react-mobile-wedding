@@ -32,7 +32,8 @@ const GalleryBox = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 0.3rem;
-      height: 550px;
+      height: 600px;
+      width: 440px;
       display: flex;
 
       img {
@@ -53,9 +54,9 @@ const GalleryBox = styled.div`
     border: none;
     color: #fff;
     font-size: 1.3rem;
-    position: absolute;
-    right: 1rem;
-    top: -5rem;
+    position: fixed;
+    top: 0;
+    right: 0.5rem;
     cursor: pointer;
   }
 
