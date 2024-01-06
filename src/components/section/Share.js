@@ -27,7 +27,7 @@ export default function Share() {
         title: "손창경 ❤ 조하나 결혼합니다.",
         description:
           "2024년 3월 24일 일요일 오전 11시 30분 인천아시아드웨딩컨벤션 브릴리에홀",
-        imageUrl: "https://ifh.cc/g/LCqoqs.jpg",
+        imageUrl: "https://i.ibb.co/xjJQFbL/intro-image1.jpg",
         link: {
           mobileWebUrl: realUrl,
         },
