@@ -15,6 +15,8 @@ import {
   couple_image13,
   couple_image14,
   couple_image15,
+  couple_image16,
+  couple_image17,
 } from "../../assets/images";
 import { GalleryBox, ButtonIcon } from "../styles/GalleryBox";
 import ScrollContainer from "react-indiana-drag-scroll";
@@ -35,8 +37,9 @@ export default function Gallery() {
     { path: couple_image9, top: 0, left: 800, type: "w", num: 12 },
     { path: couple_image7, top: 136.7, left: 800, type: "h", num: 13 },
     { path: couple_image14, top: 431.7, left: 800, type: "w", num: 14 },
-    { path: couple_image15, top: 0, left: 1000, type: "h", num: 15 },
-    { path: couple_image13, top: 273.4, left: 1000, type: "h", num: 16 },
+    { path: couple_image17, top: 0, left: 1000, type: "w", num: 15 },
+    { path: couple_image16, top: 136.7, left: 1000, type: "w", num: 16 },
+    { path: couple_image13, top: 273.4, left: 1000, type: "h", num: 17 },
   ];
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -81,7 +84,7 @@ export default function Gallery() {
         </div>
 
         <div className="img-page nanumFont">
-          {images[selectedImageIndex].num}/16
+          {images[selectedImageIndex].num}/17
         </div>
 
         <ButtonIcon

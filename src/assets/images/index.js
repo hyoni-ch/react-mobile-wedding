@@ -14,7 +14,9 @@ import couple_image11 from "./11.jpg";
 import couple_image12 from "./12.jpg";
 import couple_image13 from "./13.jpg";
 import couple_image14 from "./14.jpg";
-import couple_image15 from "./1.png";
+import couple_image15 from "./15.jpg";
+import couple_image16 from "./16.jpg";
+import couple_image17 from "./17.jpg";
 export {
   intro_image1,
   intro_image2,
@@ -33,4 +35,6 @@ export {
   couple_image13,
   couple_image14,
   couple_image15,
+  couple_image16,
+  couple_image17,
 };
