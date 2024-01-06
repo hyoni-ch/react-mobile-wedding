@@ -21,6 +21,7 @@ export default function Intro() {
           src={intro_image1}
           alt="인트로 이미지"
           width="100%"
+          max-width="440px"
           height="480vh"
         />
         <ul className="lineHeight wedding-about">
