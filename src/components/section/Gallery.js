@@ -14,13 +14,14 @@ import {
   couple_image12,
   couple_image13,
   couple_image14,
+  couple_image15,
 } from "../../assets/images";
 import { GalleryBox, ButtonIcon } from "../styles/GalleryBox";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Gallery() {
   const images = [
-    { path: couple_image13, top: 0, left: 0, type: "h", num: 1 },
+    { path: couple_image8, top: 0, left: 0, type: "h", num: 1 },
     { path: couple_image5, top: 295, left: 0, type: "w", num: 2 },
     { path: couple_image6, top: 431.7, left: 0, type: "w", num: 3 },
     { path: couple_image4, top: 0, left: 200, type: "w", num: 4 },
@@ -30,12 +31,12 @@ export default function Gallery() {
     { path: couple_image10, top: 136.7, left: 400, type: "w", num: 8 },
     { path: couple_image3, top: 273.4, left: 400, type: "h", num: 9 },
     { path: couple_image12, top: 0, left: 600, type: "h", num: 10 },
-    { path: couple_image12, top: 295, left: 600, type: "h", num: 11 },
+    { path: couple_image15, top: 295, left: 600, type: "h", num: 11 },
     { path: couple_image9, top: 0, left: 800, type: "w", num: 12 },
     { path: couple_image7, top: 136.7, left: 800, type: "h", num: 13 },
     { path: couple_image14, top: 431.7, left: 800, type: "w", num: 14 },
-    { path: couple_image13, top: 0, left: 1000, type: "h", num: 15 },
-    { path: couple_image13, top: 295, left: 1000, type: "h", num: 16 },
+    { path: couple_image15, top: 0, left: 1000, type: "h", num: 15 },
+    { path: couple_image13, top: 273.4, left: 1000, type: "h", num: 16 },
   ];
 
   const [modalIsOpen, setModalIsOpen] = useState(false);

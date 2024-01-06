@@ -13,6 +13,7 @@ import couple_image11 from "./11.jpg";
 import couple_image12 from "./12.jpg";
 import couple_image13 from "./13.jpg";
 import couple_image14 from "./14.jpg";
+import couple_image15 from "./1.png";
 export {
   intro_image1,
   couple_image1,
@@ -29,4 +30,5 @@ export {
   couple_image12,
   couple_image13,
   couple_image14,
+  couple_image15,
 };
