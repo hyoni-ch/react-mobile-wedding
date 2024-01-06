@@ -11,16 +11,18 @@ import {
   couple_image9,
   couple_image10,
   couple_image11,
+  couple_image12,
 } from "../../assets/images";
 import { GalleryBox, ButtonIcon } from "../styles/GalleryBox";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Gallery() {
   const images = [
-    { path: couple_image1, top: 0, left: 0 },
+    { path: couple_image12, top: 0, left: 600, height: 137 },
+    { path: couple_image1, top: 145, left: 200, height: 137 },
     { path: couple_image5, top: 145, left: 600, height: 286 },
     { path: couple_image4, top: 0, left: 400, height: 286 },
-    { path: couple_image6, top: 0, left: 600, height: 137 },
+    { path: couple_image6, top: 0, left: 0, height: 137 },
     { path: couple_image9, top: 145, left: 0, height: 286 },
     { path: couple_image7, top: 442.5, left: 600, height: 137 },
     { path: couple_image2, top: 442.5, left: 0, height: 137 },

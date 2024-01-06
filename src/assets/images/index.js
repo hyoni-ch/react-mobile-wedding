@@ -10,6 +10,7 @@ import couple_image11 from "./w4.png";
 import couple_image8 from "./wm1.png";
 import couple_image9 from "./wm2.png";
 import couple_image10 from "./wn3.png";
+import couple_image12 from "./wm4.png";
 export {
   intro_image,
   couple_image1,
@@ -23,4 +24,5 @@ export {
   couple_image9,
   couple_image10,
   couple_image11,
+  couple_image12,
 };
