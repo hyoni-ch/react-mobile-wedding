@@ -27,6 +27,7 @@ const MainBox = styled.div`
 
   background-color: #fff;
   max-width: 440px;
+  width: 100vw;
   margin: 0 auto;
   line-height: 1.5;
   text-align: center;
