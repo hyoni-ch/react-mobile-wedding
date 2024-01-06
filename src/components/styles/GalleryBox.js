@@ -95,7 +95,7 @@ const GalleryBox = styled.div`
       x: 30px;
       y: 30px;
       stroke-dasharray: 100;
-      stroke-dashoffset: -100;
+      stroke-dashoffset: 100;
       animation: ani1 2.5s infinite linear;
       animation-delay: 0.3s;
     }
@@ -121,7 +121,7 @@ const GalleryBox = styled.div`
     }
 
     40% {
-      stroke-dashoffset: -110;
+      stroke-dashoffset: -90;
     }
 
     85% {
