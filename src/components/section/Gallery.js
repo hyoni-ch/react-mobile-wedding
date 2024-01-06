@@ -68,7 +68,7 @@ export default function Gallery() {
   };
 
   return (
-    <GalleryBox>
+    <GalleryBox className="box-sizing">
       <h2 className="title pointColor">gallery</h2>
 
       <section className={`modal ${modalIsOpen ? "modal-open" : ""}`}>

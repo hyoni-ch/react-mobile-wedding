@@ -38,6 +38,12 @@ const MainBox = styled.div`
     width: 100%;
   }
 
+  .box-sizing {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   .w-full {
     width: 100%;
   }

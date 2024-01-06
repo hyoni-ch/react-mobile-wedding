@@ -65,7 +65,7 @@ export default function Location() {
   };
 
   return (
-    <LocationBox className="flex flex-col bg-gray relative ">
+    <LocationBox className="flex flex-col bg-gray relative box-sizing">
       <Fade bottom cascade delay={500}>
         <div className="bg-img-top ">
           <img

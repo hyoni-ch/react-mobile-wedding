@@ -6,7 +6,7 @@ import Upload from "./Upload";
 
 export default function GuestBook() {
   return (
-    <GuestBookBox className="relative spacerB bg-pink">
+    <GuestBookBox className="relative spacerB bg-pink box-sizing">
       <Fade bottom cascade delay={500}>
         <div className="bg-img-top">
           <img

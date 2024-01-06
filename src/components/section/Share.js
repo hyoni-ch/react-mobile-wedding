@@ -46,7 +46,7 @@ export default function Share() {
   };
 
   return (
-    <ShareBox className="relative spacerT50 bg-gray">
+    <ShareBox className="relative spacerT50 bg-gray box-sizing">
       <Fade bottom cascade delay={500}>
         <div className="bg-img-top">
           <img

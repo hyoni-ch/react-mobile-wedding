@@ -30,7 +30,7 @@ export default function Bank() {
   };
 
   return (
-    <BankBox className="relative spacerB">
+    <BankBox className="relative spacerB box-sizing">
       <Fade bottom cascade delay={500}>
         <div className="bg-img">
           <img
