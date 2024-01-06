@@ -31,6 +31,9 @@ const MainBox = styled.div`
   margin: 0 auto;
   line-height: 1.5;
   text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   section {
     width: 100%;

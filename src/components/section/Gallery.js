@@ -33,7 +33,8 @@ export default function Gallery() {
     { path: couple_image5, top: 135, left: 600, type: "h", num: 11 },
     { path: couple_image7, top: 427.5, left: 600, type: "w", num: 12 },
     { path: couple_image13, top: 0, left: 800, type: "h", num: 13 },
-    { path: couple_image14, top: 427.5, left: 800, type: "h", num: 14 },
+    { path: couple_image14, top: 293, left: 800, type: "2", num: 14 },
+    { path: couple_image14, top: 427.5, left: 800, type: "2", num: 15 },
   ];
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
