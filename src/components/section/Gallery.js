@@ -131,11 +131,7 @@ export default function Gallery() {
         </button>
       </section>
 
-      <ScrollContainer
-        className="scroll-container"
-        onMouseDown={onMouseDownImage}
-        onClick={onMouseDownImage}
-      >
+      <ScrollContainer className="scroll-container">
         <section className="flex flex-col relative gallery-container">
           <div style={{ paddingRight: "1rem" }}>
             {images.map((image, index) => (
@@ -151,6 +147,7 @@ export default function Gallery() {
                 className="w-full"
                 onClick={() => onClickImage(index)}
                 onMouseDown={onMouseDownImage}
+                onMouseOver={onMouseDownImage}
               />
             ))}
           </div>
