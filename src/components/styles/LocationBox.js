@@ -18,8 +18,6 @@ const LocationBox = styled.div`
     position: relative;
     bottom: 85px;
     border-radius: 10px;
-    border: 1px solid #ccc;
-    float: left;
   }
   .customoverlay:nth-of-type(n) {
     border: 0;

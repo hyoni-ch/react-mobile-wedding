@@ -47,10 +47,8 @@ hr {
 
 
 .App {
-
   font-family: "Noto Serif KR",serif;
   background-color: rgb(59, 59, 59);
-
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
