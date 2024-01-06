@@ -147,6 +147,7 @@ export default function Gallery() {
                 className="w-full"
                 onClick={() => onClickImage(index)}
                 onMouseDown={onMouseDownImage}
+                onMouseOver={onMouseDownImage}
               />
             ))}
           </div>
