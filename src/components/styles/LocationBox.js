@@ -47,17 +47,6 @@ const LocationBox = styled.div`
     color: #fff;
   }
 
-  .customoverlay:after {
-    content: "";
-    position: absolute;
-    margin-left: -12px;
-    left: 50%;
-    bottom: -12px;
-    width: 22px;
-    height: 12px;
-    background: url("https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png");
-  }
-
   .customoverlay:hover {
     scale: 1.05;
   }

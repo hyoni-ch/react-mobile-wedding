@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { ShareBox } from "../styles/ShareBox";
 import Fade from "react-reveal/Fade";
 import { CopyToClipboard } from "react-copy-to-clipboard/src";
-import { intro_image1 } from "../../assets/images";
 
 const { Kakao } = window;
 export default function Share() {
@@ -28,7 +27,7 @@ export default function Share() {
         title: "손창경 ❤ 조하나 결혼합니다.",
         description:
           "2024년 3월 24일 일요일 오전 11시 30분 인천아시아드웨딩컨벤션 브릴리에홀",
-        imageUrl: "https://ibb.co/wWM1cqg",
+        imageUrl: "https://ifh.cc/g/LCqoqs.jpg",
         link: {
           mobileWebUrl: realUrl,
         },
@@ -45,7 +44,7 @@ export default function Share() {
   };
 
   return (
-    <ShareBox className="relative spacerT50 bg-gray ">
+    <ShareBox className="relative spacerT50 bg-gray">
       <Fade bottom cascade delay={500}>
         <div className="bg-img-top">
           <img

@@ -194,7 +194,7 @@ export default function Location() {
           <div className="line"></div>
         </Fade>
         <Fade bottom cascade delay={500}>
-          <div className="text-left font-size-095">
+          <div className="text-left font-size-095 ">
             <p>셔틀버스 운행 (15분 간격)</p>
             <p className="bus-point pointColor">
               ※ 도로교통상황에 따라 배차 간격이 길어질 수 있습니다.
