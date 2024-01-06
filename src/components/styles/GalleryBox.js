@@ -56,19 +56,20 @@ const GalleryBox = styled.div`
 
   .img-page {
     position: fixed;
-    left: 1vw;
-    top: 1vh;
-    color: #888888;
+    left: 0rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    color: #ffff;
     font-size: 1.3rem;
   }
   .btn-close {
     background: none;
     border: none;
-    color: #888888;
+    color: #fff;
     font-size: 1.3rem;
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 0.5rem;
+    right: 0.5rem;
     cursor: pointer;
     font-weight: 700;
   }
@@ -81,11 +82,11 @@ const ButtonIcon = styled.svg`
   z-index: 999;
 
   &.buttonIcon1 {
-    left: 1rem;
+    left: 0.5rem;
   }
 
   &.buttonIcon2 {
-    right: 1rem;
+    right: 0.5rem;
   }
 `;
 

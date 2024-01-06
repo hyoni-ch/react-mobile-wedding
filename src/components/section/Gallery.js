@@ -90,7 +90,7 @@ export default function Gallery() {
         >
           <path
             d="M25 30L15 20L25 10"
-            stroke="#888888"
+            stroke="#ffffff"
             stroke-width="3"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -107,7 +107,7 @@ export default function Gallery() {
         >
           <path
             d="M15 30L25 20L15 10"
-            stroke="#888888"
+            stroke="#ffffff"
             stroke-width="3"
             stroke-linecap="round"
             stroke-linejoin="round"
