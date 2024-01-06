@@ -82,6 +82,7 @@ const BankBox = styled.div`
     height: 100vh;
     opacity: 0;
     visibility: hidden;
+    width: 100%;
 
     .modal-box {
       position: absolute;
@@ -90,8 +91,7 @@ const BankBox = styled.div`
       transform: translate(-50%, -50%);
       border-radius: 0.3rem;
       background-color: #fff;
-      max-width: 2rem;
-      width: 80vw;
+      width: 22rem;
 
       .modal-box-title {
         height: 3rem;
@@ -115,6 +115,12 @@ const BankBox = styled.div`
             color: #ce8383;
           }
         }
+      }
+    }
+
+    @media screen and (max-width: 440px) {
+      .modal-box {
+        width: 80%;
       }
     }
 
