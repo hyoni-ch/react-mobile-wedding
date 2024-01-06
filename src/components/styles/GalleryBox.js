@@ -175,7 +175,7 @@ const GalleryBox = styled.div`
   @media screen and (max-width: 440px) {
     .push {
       .push-line {
-        stroke-dashoffset: 100;
+        stroke-dashoffset: 0;
         animation: ani1-2 2.5s infinite linear;
         animation-delay: 0.3s;
       }
