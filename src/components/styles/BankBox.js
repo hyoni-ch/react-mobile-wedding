@@ -17,6 +17,7 @@ const BankBox = styled.div`
     border: 1px solid #eee;
     border-radius: 0.3rem;
     width: 85%;
+    height: 3rem;
 
     .arrow {
       position: absolute;
@@ -66,8 +67,8 @@ const BankBox = styled.div`
   .btn-call {
     margin: 1rem;
     width: 10rem;
-    border-radius: 2rem; !important;
-    border: 1px solid #ddd; !important;
+    border-radius: 2rem !important;
+    border: 1px solid #ddd !important;
   }
 
   .modal {
