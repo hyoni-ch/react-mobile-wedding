@@ -17,7 +17,6 @@ const BankBox = styled.div`
     border: 1px solid #eee;
     border-radius: 0.3rem;
     width: 85%;
-    height: 3rem;
 
     .arrow {
       position: absolute;
@@ -90,7 +89,8 @@ const BankBox = styled.div`
       transform: translate(-50%, -50%);
       border-radius: 0.3rem;
       background-color: #fff;
-      width: 22rem;
+      max-width: 2rem;
+      width: 80vw;
 
       .modal-box-title {
         height: 3rem;

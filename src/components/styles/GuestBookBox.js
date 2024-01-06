@@ -10,9 +10,7 @@ const GuestBookBox = styled.div`
 
   .upload-box {
     font-family: "SUIT-Regular";
-    padding-left: 2rem;
-    padding-right: 2rem;
-    width: 85%;
+    width: 80%;
 
     .upload-form {
       background-color: #fff;
@@ -37,6 +35,10 @@ const GuestBookBox = styled.div`
         font-family: inherit;
         font-size: 1rem;
         background: inherit;
+      }
+
+      input#name {
+        width: 80%;
       }
 
       textarea {

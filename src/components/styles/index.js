@@ -31,10 +31,6 @@ const MainBox = styled.div`
   line-height: 1.5;
   text-align: center;
 
-  section {
-    width: 100%;
-  }
-
   .w-full {
     width: 100%;
   }

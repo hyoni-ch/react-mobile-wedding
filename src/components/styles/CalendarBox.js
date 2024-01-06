@@ -5,7 +5,6 @@ const CalendarBox = styled.div`
   .calendar {
     color: #777777;
     margin-bottom: 3rem;
-    width: 100%;
 
     table {
       width: 80%;
@@ -24,7 +23,7 @@ const CalendarBox = styled.div`
 
         .special-day {
           position: relative;
-          width: 100%;
+
           background-color: rgba(208, 140, 149, 0.7);
           color: #fff;
           border-radius: 50%;

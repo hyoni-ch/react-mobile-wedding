@@ -63,7 +63,7 @@ export default function Upload() {
                 value={Content}
                 cols="5"
                 maxLength="110"
-                style={{ width: "100%", height: "165px" }}
+                style={{ height: "165px" }}
                 onChange={e => {
                   setContent(e.currentTarget.value);
                 }}
