@@ -20,6 +20,7 @@ import {
 } from "../../assets/images";
 import { GalleryBox, ButtonIcon } from "../styles/GalleryBox";
 import ScrollContainer from "react-indiana-drag-scroll";
+import { BsHandIndexThumbFill } from "react-icons/bs";
 
 export default function Gallery() {
   const images = [
@@ -52,6 +53,10 @@ export default function Gallery() {
     setModalIsOpen(false);
   };
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+
+  const onMouseDownImage = () => {
+    document.querySelector(".push").style.opacity = 0;
+  };
 
   const onClickImage = index => {
     setSelectedImageIndex(index);
@@ -141,8 +146,35 @@ export default function Gallery() {
                 }}
                 className="w-full"
                 onClick={() => onClickImage(index)}
+                onMouseDown={onMouseDownImage}
               />
             ))}
+          </div>
+
+          <div className="push">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              width="100"
+              height="40"
+              viewBox="0 0 50 50"
+              fill="none"
+            >
+              <path
+                d="M-10 25L76 25"
+                stroke="#fff"
+                stroke-width="7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                className="push-line relative"
+              />
+            </svg>
+            <BsHandIndexThumbFill
+              size="20"
+              color="#fff"
+              className="push-pointer"
+            />
+            <div className="push-p nanumFont">밀어서 갤러리 사진보기</div>
           </div>
         </section>
       </ScrollContainer>

@@ -73,13 +73,91 @@ const GalleryBox = styled.div`
     cursor: pointer;
     font-weight: 700;
   }
+
+  .push {
+    z-index: 20;
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    max-height: 5.5rem;
+    height: 100%;
+    max-width: 9.2rem;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.48);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    transition: all 1s;
+
+    .push-line {
+      width: 100px;
+      height: 100px;
+      x: 30px;
+      y: 30px;
+      stroke-dasharray: 100;
+      stroke-dashoffset: -100;
+      animation: ani1 2.5s infinite linear;
+      animation-delay: 0.3s;
+    }
+
+    .push-pointer {
+      position: absolute;
+      top: 1.2rem;
+      right: 1rem;
+      animation: ani2 2.5s infinite linear;
+    }
+
+    .push-p {
+      position: absolute;
+      top: 3.5rem;
+      font-size: 0.9rem;
+      letter-spacing: -1px;
+      color: #fff;
+    }
+  }
+
+  @keyframes ani1 {
+    0% {
+    }
+
+    40% {
+      stroke-dashoffset: -90;
+    }
+
+    85% {
+      stroke-dashoffset: 10;
+      stroke: #f6f6f6;
+    }
+
+    100% {
+      stroke-dashoffset: 95;
+      stroke: #999999;
+    }
+  }
+
+  @keyframes ani2 {
+    0% {
+      left: 2.3rem;
+    }
+
+    50% {
+      right: 1rem;
+    }
+    92% {
+      right: 5.6rem;
+    }
+
+    100% {
+      right: 5.6rem;
+    }
+  }
 `;
 
 const ButtonIcon = styled.svg`
   cursor: pointer;
   position: fixed;
   top: 50vh;
-  z-index: 999;
+  z-index: 20;
 
   &.buttonIcon1 {
     left: 0.5rem;

@@ -7,18 +7,18 @@ const CalendarBox = styled.div`
     margin-bottom: 3rem;
 
     table {
-      width: 80%;
+      width: 75%;
 
       .table-th {
-        padding-bottom: 1.2rem;
-        padding-top: 1.2rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
       }
 
       .table-td {
         padding: 0.5rem 0.2rem;
 
         .td-div {
-          height: 2.5rem;
+          height: 2.2rem;
         }
 
         .special-day {

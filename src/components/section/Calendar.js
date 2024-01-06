@@ -32,8 +32,15 @@ class Calendar extends React.Component {
         <h2 className="title pointColor">Calendar</h2>
 
         <section className="calendar flex flex-col fade">
-          <div style={{ marginBottom: "20px" }}>
+          {/* <div style={{ marginBottom: "20px" }}>
             <strong>{month + 1}월</strong>
+          </div> */}
+
+          <div style={{ marginBottom: "20px" }}>
+            <div style={{ fontSize: "1.6rem", marginBottom: "5px" }}>
+              <strong>2024.03.24</strong>
+            </div>
+            <div style={{ fontSize: "1.1rem" }}>일요일 오전 11시 30분</div>
           </div>
 
           <table>
@@ -66,7 +73,7 @@ class Calendar extends React.Component {
                         >
                           <div>{day !== 0 ? day : ""}</div>
 
-                          <div
+                          {/* <div
                             className={` ${
                               day !== 0 && index === 4 && idx === 0
                                 ? "special-day-time"
@@ -74,7 +81,7 @@ class Calendar extends React.Component {
                             }`}
                           >
                             {index === 4 && idx === 0 && "오전 11:30"}
-                          </div>
+                          </div> */}
                         </div>
                       </td>
                     );

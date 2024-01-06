@@ -53,4 +53,5 @@ hr {
   -moz-user-select:none;
   -ms-user-select:none;
   user-select:none;
+  oncontextmenu:return false;
 }
