@@ -1,4 +1,5 @@
 import intro_image1 from "./intro_image1.jpg";
+import intro_image2 from "./intro_image2.jpg";
 import couple_image1 from "./1.jpg";
 import couple_image2 from "./2.jpg";
 import couple_image3 from "./3.jpg";
@@ -16,6 +17,7 @@ import couple_image14 from "./14.jpg";
 import couple_image15 from "./1.png";
 export {
   intro_image1,
+  intro_image2,
   couple_image1,
   couple_image2,
   couple_image3,

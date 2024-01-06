@@ -1,7 +1,7 @@
 import React from "react";
 import { MentBox } from "../styles/MentBox";
 import Fade from "react-reveal/Fade";
-import { intro_image1 } from "../../assets/images";
+import { intro_image2 } from "../../assets/images";
 
 export default function Ment() {
   return (
@@ -27,7 +27,7 @@ export default function Ment() {
       </section>
 
       <section>
-        <img src={intro_image1} alt="" height="660px" width="100%" />
+        <img src={intro_image2} alt="" width="100%" max-width="440px" />
       </section>
 
       <section>
