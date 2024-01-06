@@ -121,7 +121,7 @@ const GalleryBox = styled.div`
     }
 
     40% {
-      stroke-dashoffset: -90;
+      stroke-dashoffset: -110;
     }
 
     85% {
