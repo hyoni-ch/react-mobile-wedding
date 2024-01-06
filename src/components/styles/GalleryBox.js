@@ -33,7 +33,7 @@ const GalleryBox = styled.div`
       transform: translate(-50%, -50%);
       border-radius: 0.3rem;
       height: 600px;
-      width: 440px;
+      max-width: 440px;
       display: flex;
 
       img {
@@ -56,7 +56,7 @@ const GalleryBox = styled.div`
     font-size: 1.3rem;
     position: fixed;
     top: 0;
-    right: 0.5rem;
+    right: 1rem;
     cursor: pointer;
   }
 
@@ -93,8 +93,6 @@ const GalleryBox = styled.div`
 
 const ButtonIcon = styled.svg`
   cursor: pointer;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
   margin-top: 52.5%;
 `;
 
