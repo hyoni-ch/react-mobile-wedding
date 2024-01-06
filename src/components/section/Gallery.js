@@ -79,9 +79,11 @@ export default function Gallery() {
             className={`${images[selectedImageIndex].type}`}
           />
         </div>
+
         <div className="img-page nanumFont">
-          {images[selectedImageIndex].num}/15
+          {images[selectedImageIndex].num}/16
         </div>
+
         <ButtonIcon
           xmlns="http://www.w3.org/2000/svg"
           width="40"

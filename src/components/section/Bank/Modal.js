@@ -6,7 +6,7 @@ export default function Modal({ modalIsOpen, closeModal }) {
   return (
     <section className={`modal  ${modalIsOpen ? "modal-open" : ""}`}>
       <div className="modal-box flex flex-col">
-        <div className="modal-box-title flex">연 락 하 기</div>
+        <div className="modal-box-title flex w-full">연 락 하 기</div>
 
         <div className="modal-container flex flex-col w-full">
           <div className="modal-box-about flex w-full">
