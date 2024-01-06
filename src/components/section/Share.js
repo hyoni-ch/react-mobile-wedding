@@ -29,7 +29,7 @@ export default function Share() {
         description:
           "2024년 3월 24일 일요일 오전 11시 30분 인천아시아드웨딩컨벤션 브릴리에홀",
         imageUrl:
-          "https://drive.google.com/file/d/1-fr86PfvHPKgoiz-8XEeHRR2wDrP1KlF/view?usp=sharing",
+          "https://drive.google.com/file/d/1-fr86PfvHPKgoiz-8XEeHRR2wDrP1KlF/view",
         link: {
           mobileWebUrl: realUrl,
         },
