@@ -95,7 +95,7 @@ const ButtonIcon = styled.svg`
   cursor: pointer;
   margin-left: 0.2rem;
   margin-right: 0.2rem;
-  margin-top: 52.5%;
+  margin-top: 60%;
 `;
 
 export { GalleryBox, ButtonIcon };
