@@ -15,7 +15,7 @@ const MentBox = styled.div`
     .poetry {
       p {
         margin: 0;
-        width: 250px;
+        width: 265px;
         height: 2rem;
         border-bottom: 1px solid #eee;
       }

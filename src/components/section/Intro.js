@@ -1,6 +1,6 @@
 import React from "react";
 import { IntroBox } from "../styles/IntroBox";
-import { intro_image } from "../../assets/images";
+import { intro_image1 } from "../../assets/images";
 
 export default function Intro() {
   return (
@@ -18,7 +18,7 @@ export default function Intro() {
 
       <section>
         <img
-          src={intro_image}
+          src={intro_image1}
           alt="인트로 이미지"
           width="100%"
           height="480vh"

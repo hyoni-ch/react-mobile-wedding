@@ -32,14 +32,19 @@ const GalleryBox = styled.div`
       left: 50%;
       transform: translate(-50%, -50%);
       border-radius: 0.3rem;
-      height: 600px;
-      max-width: 440px;
       display: flex;
 
       img {
-        width: 22rem;
-        border-radius: 0.3rem;
-        margin: auto;
+        background-size: cover;
+      }
+
+      img.w {
+        width: 100vw;
+        max-width: 1380px;
+      }
+      img.h {
+        max-height: 100vh;
+        max-width: 100vw;
       }
     }
   }
@@ -49,53 +54,39 @@ const GalleryBox = styled.div`
     display: block;
   }
 
+  .img-page {
+    position: fixed;
+    left: 1vw;
+    top: 1vh;
+    color: #888888;
+    font-size: 1.3rem;
+  }
   .btn-close {
     background: none;
     border: none;
-    color: #fff;
+    color: #888888;
     font-size: 1.3rem;
     position: fixed;
-    top: 0;
-    right: 0.5rem;
+    top: 1rem;
+    right: 1rem;
     cursor: pointer;
-  }
-
-  @media screen and (max-width: 440px) {
-    .modal {
-      .modal-box {
-        img {
-          width: 20rem;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .modal {
-      .modal-box {
-        img {
-          width: 18rem;
-        }
-      }
-    }
-  }
-
-  @media screen and (max-width: 380px) {
-    .modal {
-      .modal-box {
-        img {
-          width: 16rem;
-        }
-      }
-    }
+    font-weight: 700;
   }
 `;
 
 const ButtonIcon = styled.svg`
   cursor: pointer;
-  margin-left: 0.2rem;
-  margin-right: 0.2rem;
-  margin-top: 60%;
+  position: fixed;
+  top: 50vh;
+  z-index: 999;
+
+  &.buttonIcon1 {
+    left: 1rem;
+  }
+
+  &.buttonIcon2 {
+    right: 1rem;
+  }
 `;
 
 export { GalleryBox, ButtonIcon };

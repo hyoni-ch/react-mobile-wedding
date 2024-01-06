@@ -12,24 +12,28 @@ import {
   couple_image10,
   couple_image11,
   couple_image12,
+  couple_image13,
+  couple_image14,
 } from "../../assets/images";
 import { GalleryBox, ButtonIcon } from "../styles/GalleryBox";
 import ScrollContainer from "react-indiana-drag-scroll";
 
 export default function Gallery() {
   const images = [
-    { path: couple_image12, top: 0, left: 600, height: 137 },
-    { path: couple_image1, top: 145, left: 200, height: 137 },
-    { path: couple_image5, top: 145, left: 600, height: 286 },
-    { path: couple_image4, top: 0, left: 400, height: 286 },
-    { path: couple_image6, top: 0, left: 0, height: 137 },
-    { path: couple_image9, top: 145, left: 0, height: 286 },
-    { path: couple_image7, top: 442.5, left: 600, height: 137 },
-    { path: couple_image2, top: 442.5, left: 0, height: 137 },
-    { path: couple_image8, top: 295, left: 200, height: 286 },
-    { path: couple_image10, top: 442.5, left: 400, height: 137 },
-    { path: couple_image3, top: 295, left: 400, height: 137 },
-    { path: couple_image11, top: 0, left: 200, height: 137 },
+    { path: couple_image6, top: 0, left: 0, type: "w", num: 1 },
+    { path: couple_image9, top: 135, left: 0, type: "h", num: 2 },
+    { path: couple_image2, top: 427.5, left: 0, type: "w", num: 3 },
+    { path: couple_image11, top: 0, left: 200, type: "w", num: 4 },
+    { path: couple_image1, top: 135, left: 200, type: "w", num: 5 },
+    { path: couple_image8, top: 270, left: 200, type: "h", num: 6 },
+    { path: couple_image4, top: 0, left: 400, type: "h", num: 7 },
+    { path: couple_image3, top: 293, left: 400, type: "w", num: 8 },
+    { path: couple_image10, top: 427.5, left: 400, type: "w", num: 9 },
+    { path: couple_image12, top: 0, left: 600, type: "w", num: 10 },
+    { path: couple_image5, top: 135, left: 600, type: "h", num: 11 },
+    { path: couple_image7, top: 427.5, left: 600, type: "w", num: 12 },
+    { path: couple_image13, top: 0, left: 800, type: "h", num: 13 },
+    { path: couple_image14, top: 427.5, left: 800, type: "h", num: 14 },
   ];
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -66,44 +70,52 @@ export default function Gallery() {
 
       <section className={`modal ${modalIsOpen ? "modal-open" : ""}`}>
         <div className="modal-box">
-          <ButtonIcon
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            onClick={onPrevImage}
-          >
-            <path
-              d="M25 30L15 20L25 10"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </ButtonIcon>
-
-          <img src={images[selectedImageIndex].path} alt="img" />
-          <ButtonIcon
-            xmlns="http://www.w3.org/2000/svg"
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            onClick={onNextImage}
-          >
-            <path
-              d="M15 30L25 20L15 10"
-              stroke="#ffffff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </ButtonIcon>
-          <button className="btn-close" onClick={closeModal}>
-            X
-          </button>
+          <img
+            src={images[selectedImageIndex].path}
+            alt="img"
+            className={`${images[selectedImageIndex].type}`}
+          />
         </div>
+        <div className="img-page nanumFont">
+          {images[selectedImageIndex].num}/15
+        </div>
+        <ButtonIcon
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          className="buttonIcon1"
+          onClick={onPrevImage}
+        >
+          <path
+            d="M25 30L15 20L25 10"
+            stroke="#888888"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </ButtonIcon>
+        <ButtonIcon
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          className="buttonIcon2"
+          onClick={onNextImage}
+        >
+          <path
+            d="M15 30L25 20L15 10"
+            stroke="#888888"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </ButtonIcon>
+        <button className="btn-close nanumFont" onClick={closeModal}>
+          X
+        </button>
       </section>
 
       <ScrollContainer className="scroll-container">
@@ -117,7 +129,7 @@ export default function Gallery() {
                 style={{
                   top: `${image.top}px`,
                   left: `${image.left}px`,
-                  height: `${image.height}px`,
+                  // height: `${image.height}px`,
                 }}
                 className="w-full"
                 onClick={() => onClickImage(index)}
