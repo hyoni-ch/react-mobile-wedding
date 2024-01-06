@@ -56,7 +56,7 @@ const GalleryBox = styled.div`
     font-size: 1.3rem;
     position: fixed;
     top: 0;
-    right: 1rem;
+    right: 0.5rem;
     cursor: pointer;
   }
 
@@ -93,6 +93,8 @@ const GalleryBox = styled.div`
 
 const ButtonIcon = styled.svg`
   cursor: pointer;
+  margin-left: 0.2rem;
+  margin-right: 0.2rem;
   margin-top: 52.5%;
 `;
 
