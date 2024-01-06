@@ -19,7 +19,6 @@ const CalendarBox = styled.div`
         padding: 0.5rem 0.2rem;
 
         .td-div {
-          // width: 2.5rem;
           height: 2.5rem;
         }
 
@@ -55,8 +54,4 @@ const CalendarBox = styled.div`
   }
 `;
 
-
-
-
-
-export { CalendarBox} ;
+export { CalendarBox };

@@ -1,10 +1,7 @@
 import styled from "styled-components";
 
 const IntroBox = styled.div`
-  width: 100%;
-
   .introTop {
-    width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;

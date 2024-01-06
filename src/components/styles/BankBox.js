@@ -79,7 +79,6 @@ const BankBox = styled.div`
     z-index: 9999;
     left: 0;
     top: 0;
-    width: 100%;
     height: 100vh;
     opacity: 0;
     visibility: hidden;
@@ -95,7 +94,6 @@ const BankBox = styled.div`
 
       .modal-box-title {
         height: 3rem;
-        width: 100%;
         background-color: #f7f7f7;
         border-radius: 0.3rem 0.3rem 0 0;
         margin-bottom: 0.4rem;
