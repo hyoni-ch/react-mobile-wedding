@@ -4,7 +4,7 @@ import { IoIosMail } from "react-icons/io";
 
 export default function Modal({ modalIsOpen, closeModal }) {
   return (
-    <section className={`modal box-sizing ${modalIsOpen ? "modal-open" : ""}`}>
+    <section className={`modal  ${modalIsOpen ? "modal-open" : ""}`}>
       <div className="modal-box flex flex-col">
         <div className="modal-box-title flex">연 락 하 기</div>
 

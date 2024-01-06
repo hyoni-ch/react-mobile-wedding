@@ -6,7 +6,7 @@ import { MainBox } from "./components/styles";
 function App() {
   return (
     <div className="App">
-      <MainBox className="flex">
+      <MainBox className="flex box-sizing">
         <Layout />
         <Footer />
       </MainBox>

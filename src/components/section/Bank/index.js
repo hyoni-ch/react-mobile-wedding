@@ -30,9 +30,9 @@ export default function Bank() {
   };
 
   return (
-    <BankBox className="relative spacerB box-sizing">
+    <BankBox className="relative spacerB ">
       <Fade bottom cascade delay={500}>
-        <div className="bg-img">
+        <div className="bg-img ">
           <img
             src="https://cdn2.makedear.com/homepage/img/bg3/white-top.png"
             alt=""
@@ -50,7 +50,7 @@ export default function Bank() {
           <h3 className="padding-3">마음 전하실 곳</h3>
 
           <div
-            className="line padding-3"
+            className="line padding-3 "
             style={{ marginTop: "1.5rem", marginBottom: "1.5rem" }}
           ></div>
         </Fade>
@@ -67,7 +67,7 @@ export default function Bank() {
 
       <section className="flex flex-col">
         <div
-          className="account-box flex relative account-container fade"
+          className="account-box flex relative account-container "
           onClick={handleGroomContainerClick}
         >
           <div>
@@ -84,13 +84,13 @@ export default function Bank() {
 
         <div
           id="groom-container"
-          className={`account-box account-box-sub font-size-095 relative ${
+          className={`account-box account-box-sub font-size-095 relative  ${
             isGroomAccountsVisible ? "open-g" : ""
           }`}
         >
-          <div className="margin10">
-            <div className="flex" style={{ marginBottom: "5px" }}>
-              <div className="text-left w-90">
+          <div className="margin10 ">
+            <div className="flex " style={{ marginBottom: "5px" }}>
+              <div className="text-left w-90 ">
                 신랑 <strong>손창경</strong>
               </div>
               <a
@@ -99,7 +99,7 @@ export default function Bank() {
                 target="_blank"
                 rel="noopener"
               >
-                <div className="btn-account btn-account-kakao flex">
+                <div className="btn-account btn-account-kakao flex ">
                   <RiKakaoTalkFill style={{ marginRight: "3px" }} />
                   <strong>pay</strong>
                 </div>
@@ -111,7 +111,7 @@ export default function Bank() {
                 text="국민 657802-01-301076"
                 onCopy={() => alert("클립보드에 복사되었습니다.")}
               >
-                <div className="btn-account flex">
+                <div className="btn-account flex ">
                   <LuCopy style={{ marginRight: "5px" }} />
                   복사
                 </div>
@@ -123,7 +123,7 @@ export default function Bank() {
         <div style={{ height: "5px" }}></div>
 
         <div
-          className="account-box flex relative account-container fade"
+          className="account-box flex relative account-container "
           onClick={handleBrideContainerClick}
         >
           <div>

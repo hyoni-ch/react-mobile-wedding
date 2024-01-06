@@ -5,7 +5,7 @@ import { intro_image1 } from "../../assets/images";
 
 export default function Ment() {
   return (
-    <MentBox className="flex flex-col bg-gray box-sizing">
+    <MentBox className="flex flex-col bg-gray">
       <section className="poetryBox">
         <Fade bottom delay={500}>
           <img

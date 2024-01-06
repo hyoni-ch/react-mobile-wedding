@@ -4,7 +4,7 @@ import { intro_image1 } from "../../assets/images";
 
 export default function Intro() {
   return (
-    <IntroBox className="textAlignCenter bg-gray box-sizing">
+    <IntroBox className="textAlignCenter bg-gray">
       <section className="introTop">
         <div className="wedding-name">손창경</div>
         <div className="wedding-date flex flex-col">
