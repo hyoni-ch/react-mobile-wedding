@@ -22,7 +22,6 @@ export default function Intro() {
           alt="인트로 이미지"
           width="100%"
           max-width="440px"
-          height="480vh"
         />
         <ul className="lineHeight wedding-about">
           <li>2024년 3월 24일 일요일 오전 11시 30분</li>
