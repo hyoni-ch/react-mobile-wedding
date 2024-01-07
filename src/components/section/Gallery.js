@@ -35,11 +35,11 @@ export default function Gallery() {
     { path: couple_image3, top: 273.4, left: 400, type: "h", num: 9 },
     { path: couple_image12, top: 0, left: 600, type: "h", num: 10 },
     { path: couple_image15, top: 295, left: 600, type: "h", num: 11 },
-    { path: couple_image9, top: 0, left: 800, type: "w", num: 12 },
+    { path: couple_image16, top: 0, left: 800, type: "w", num: 12 },
     { path: couple_image7, top: 136.7, left: 800, type: "h", num: 13 },
     { path: couple_image14, top: 431.7, left: 800, type: "w", num: 14 },
     { path: couple_image17, top: 0, left: 1000, type: "w", num: 15 },
-    { path: couple_image16, top: 136.7, left: 1000, type: "w", num: 16 },
+    { path: couple_image9, top: 136.7, left: 1000, type: "w", num: 16 },
     { path: couple_image13, top: 273.4, left: 1000, type: "h", num: 17 },
   ];
 
