@@ -8,7 +8,7 @@ const CalendarBox = styled.div`
     margin-bottom: 3rem;
 
     .date {
-      font-family: "sygma";
+      font-family: "sygmaFont";
     }
 
     table {

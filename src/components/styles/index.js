@@ -24,12 +24,6 @@ const MainBox = styled.div`
     font-weight: normal;
     font-style: normal;
   }
-  
-  @font-face {
-    font-family: 'sygma';
-    src:url('../../assets/fonts/'Sygma.otf) format('opentype'),
-    font-weight: 400;
-} 
 
   background-color: #fff;
   max-width: 440px;

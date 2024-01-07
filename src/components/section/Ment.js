@@ -36,13 +36,13 @@ export default function Ment() {
         </Fade>
         <Fade bottom cascade delay={300}>
           <ul className="lineHeight">
-            <li>십여년의 시간이 흘러도</li>
+            <li>십여 년의 시간이 흘러도</li>
             <li>아무리 멀리 있어도</li>
             <li>바로 옆에 있는 것 같은 믿음을 주는 </li>
             <li>소중한 사람을 만났습니다. </li>
             <br></br>
             <li>늘 변함없이 그리고 한결같이</li>
-            <li>서로를 아껴주는 두 사람이 결혼하려합니다.</li>
+            <li>서로를 아껴주는 두 사람이 결혼하려 합니다.</li>
             <br></br>
             <li>저희의 새로운 봄에 함께해 주시면</li>
             <li>행복한 마음으로 간직하겠습니다.</li>
