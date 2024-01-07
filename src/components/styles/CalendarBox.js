@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 const CalendarBox = styled.div`
   padding-bottom: 4rem;
+
   .calendar {
     color: #777777;
     margin-bottom: 3rem;
+
+    .date {
+      font-family: "sygma";
+    }
 
     table {
       width: 75%;

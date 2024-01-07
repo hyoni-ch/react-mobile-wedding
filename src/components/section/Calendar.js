@@ -37,7 +37,10 @@ class Calendar extends React.Component {
           </div> */}
 
           <div style={{ marginBottom: "20px" }}>
-            <div style={{ fontSize: "1.6rem", marginBottom: "5px" }}>
+            <div
+              style={{ fontSize: "1.6rem", marginBottom: "5px" }}
+              className="date"
+            >
               <strong>2024.03.24</strong>
             </div>
             <div style={{ fontSize: "1.1rem" }}>일요일 오전 11시 30분</div>
