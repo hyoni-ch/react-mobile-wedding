@@ -66,7 +66,7 @@ export default function Location() {
 
   return (
     <LocationBox className="flex flex-col bg-gray relative">
-      <Fade bottom cascade delay={500}>
+      <Fade bottom cascade delay={300}>
         <div className="bg-img-top ">
           <img
             src="https://cdn2.makedear.com/homepage/img/bg3/gray-top.png"
@@ -171,11 +171,11 @@ export default function Location() {
       </div>
 
       <section className="flex flex-col spacerT spacerB50">
-        <Fade bottom delay={500}>
+        <Fade bottom delay={300}>
           <h3 className="text-left">버스</h3>
           <div className="line"></div>
         </Fade>
-        <Fade bottom cascade delay={500}>
+        <Fade bottom cascade delay={300}>
           <div className="text-left font-size-095 w-90">
             <p>우성아파트[42717] : 24-1, 70, 인천e음86, 111, 111B, 302,310</p>
             <p>
@@ -189,11 +189,11 @@ export default function Location() {
       </section>
 
       <section className="flex flex-col spacerB50 w-90">
-        <Fade bottom delay={500}>
+        <Fade bottom delay={300}>
           <h3 className="text-left">지하철</h3>
           <div className="line"></div>
         </Fade>
-        <Fade bottom cascade delay={500}>
+        <Fade bottom cascade delay={300}>
           <div className="text-left font-size-095 ">
             <p>셔틀버스 운행 (15분 간격)</p>
             <p className="bus-point pointColor">
@@ -206,11 +206,11 @@ export default function Location() {
       </section>
 
       <section className="flex flex-col spacerB w-90">
-        <Fade bottom delay={500}>
+        <Fade bottom delay={300}>
           <h3 className="text-left">주차</h3>
           <div className="line"></div>
         </Fade>
-        <Fade bottom cascade delay={500}>
+        <Fade bottom cascade delay={300}>
           <div className="text-left font-size-095">
             <p>
               인천아시아드주경기장 3번 게이트 앞 주차장 이용 (주차요금 무료)

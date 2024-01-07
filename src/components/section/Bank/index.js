@@ -31,7 +31,7 @@ export default function Bank() {
 
   return (
     <BankBox className="relative spacerB ">
-      <Fade bottom cascade delay={500}>
+      <Fade bottom cascade delay={300}>
         <div className="bg-img ">
           <img
             src="https://cdn2.makedear.com/homepage/img/bg3/white-top.png"
@@ -41,12 +41,12 @@ export default function Bank() {
           />
         </div>
       </Fade>
-      <Fade bottom delay={500}>
+      <Fade bottom delay={300}>
         <h2 className="title pointColor">Account</h2>
       </Fade>
 
       <section className="spacerB50 flex flex-col">
-        <Fade bottom delay={500}>
+        <Fade bottom delay={300}>
           <h3 className="padding-3">마음 전하실 곳</h3>
 
           <div
@@ -54,7 +54,7 @@ export default function Bank() {
             style={{ marginTop: "1.5rem", marginBottom: "1.5rem" }}
           ></div>
         </Fade>
-        <Fade bottom cascade delay={500}>
+        <Fade bottom cascade delay={300}>
           <div>
             <p>참석이 어려워 직접 축하를 전하지 못하는 분들을 위해</p>
             <p>계좌번호를 기재하였습니다.</p>

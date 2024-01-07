@@ -196,6 +196,10 @@ const FooterBox = styled.footer`
   padding: 2rem;
   padding-bottom: 4rem;
   font-size: 0.9rem;
+
+  @media screen and (max-width: 440px) {
+    font-size: 0.7rem;
+  }
 `;
 
 export { MainBox, VideoBox, FooterBox };

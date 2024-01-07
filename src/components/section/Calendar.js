@@ -96,7 +96,7 @@ class Calendar extends React.Component {
         </section>
 
         <section>
-          <Fade bottom cascade delay={500}>
+          <Fade bottom cascade delay={300}>
             <div>
               <p>
                 {" "}

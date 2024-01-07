@@ -7,7 +7,7 @@ export default function Ment() {
   return (
     <MentBox className="flex flex-col bg-gray">
       <section className="poetryBox">
-        <Fade bottom delay={500}>
+        <Fade bottom delay={300}>
           <img
             src="https://cdn2.makedear.com/homepage/img/leaf1.png"
             draggable="false"
@@ -15,7 +15,7 @@ export default function Ment() {
             className="mentImg pointColor"
           />
         </Fade>
-        <Fade bottom cascade delay={500}>
+        <Fade bottom cascade delay={300}>
           <div className="poetry nanumFont lineHeight flex flex-col ">
             <p>때론 오래된 친구처럼</p>
             <p>때론 처음 만나는 사람처럼</p>
@@ -31,10 +31,10 @@ export default function Ment() {
       </section>
 
       <section>
-        <Fade bottom delay={500}>
+        <Fade bottom delay={300}>
           <h2 className="title pointColor">Invite you</h2>
         </Fade>
-        <Fade bottom cascade delay={500}>
+        <Fade bottom cascade delay={300}>
           <ul className="lineHeight">
             <li>십여년의 시간이 흘러도</li>
             <li>아무리 멀리 있어도</li>
@@ -51,7 +51,7 @@ export default function Ment() {
       </section>
 
       <section>
-        <Fade bottom cascade delay={500}>
+        <Fade bottom cascade delay={300}>
           <ul className="myName">
             <li>
               <strong>손용래</strong> · <strong>김은희</strong>의 장남{" "}
